@@ -55,7 +55,8 @@ function showingInput() {
 
   //Event listener for removal of the item from the list
   deleteButton.addEventListener('click', () => {
-    const indexForRemoval = data.indexOf(inputText);
+    let delTask = deleteButton.closest('.event-container').querySelector('.event-text').innerText;
+    const indexForRemoval = data.indexOf(delTask);
     data.splice(indexForRemoval, 1);
     task.remove();
   });
