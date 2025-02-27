@@ -1,12 +1,110 @@
-*,
-*::before,
-*::after {
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #565454;
-}
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .main-header {
+    font-size: 2.5em;
+    color: black;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 700;
+  }
+  
+  .main-container {
+    background: black;
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .main-input {
+    width: 75%;
+    padding: 12px;
+    font-size: 1.1rem;
+    border-radius: 12px;
+    border: 2px solid #ddd;
+    transition: all 0.3s ease;
+  }
+  
+  .submit-button, .clear-button {
+    width: 20%;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    background-color: white;
+    color: black;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .main-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .event-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+  }
+  
+  .event-text {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 500;
+    max-width: 200px;
+    word-break: break-all;
+    min-height: 50px;
+  }
+  
+  .btns-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+  }
+  .event-button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  
+  .clear-button {
+    justify-self: center;
+    width: 30%;
+  }
